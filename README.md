@@ -2,7 +2,7 @@
 I called it Genghis because it was the first thing that came to me.
 I hope Genghis Khan dosen't mind.
 
-# features
+# Features
 Currently this interpreter only does the following opperations 
 + `+`
 + `=`
