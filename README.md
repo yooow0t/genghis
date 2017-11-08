@@ -1,16 +1,9 @@
 # Genghis - A subset of Scheme. 
 I called it Genghis because it was the first thing that came to me.
-I hope Genghis Khan dosen't mind.
+I hope Genghis Khan doesn't mind.
 
-# Features
-Currently this interpreter only does the following opperations 
-+ `+`
-+ `=`
-+ `*`
-+ `/`
-+ `abs`
-+ `remainder`
-+ `expt`
+Genghis is similar to scheme but, without cond, lambda, set, let or any facilities for syntax definition.
+Genghis' division operator may return a float even if the arguments are integers.
 
-I will hopefuly be adding lambdas, definitions, more logic, conditionals and all of
-the other creature comforts we've come to expect from a Scheme.
+# Running Genghis
+Genghis may be run by pointing your python3 interpreter at the `genghis.py` file.
