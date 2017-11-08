@@ -94,7 +94,6 @@ def evaluate(exp, env):
                 raise TypeError("numbers may not be redefined")
 
         elif len(exp) > 1:
-            #This section here is not sensitive to anything but two arguments
             return operator(exp.pop(0), solve())
 
         else:
@@ -105,7 +104,6 @@ def evaluate(exp, env):
     if "lambda" in str(operator):
         return operator(*exp), env
 
-    #Allows evaluation of variables and booleans
     if operator != 'define':
         for i in range(len(exp)): 
             if isinstance(exp[i], str):
@@ -126,7 +124,6 @@ def function_eval(body, args, env, x):
 def repl():
     user_env = {}
     user_env.update(initial_env())
-    #for some reason when square is called it doesn't even reach here
     user_env["square"] = lambda *x : function_eval(["*", "x", "x"], ["x"], user_env, x)
 
     while True:
